@@ -6,14 +6,10 @@ import kotlin.system.exitProcess
 
 abstract class Challenge(val year: Int, val day: Int, val sample: Boolean = false) {
 
-    init {
-        execute()
-    }
-
     abstract fun readLine(str: String)
     abstract fun finish()
 
-    private fun execute() {
+    fun execute() {
         println("[Advent of Code] $year: Day $day")
 
         if (sample) {
